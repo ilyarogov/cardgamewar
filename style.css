@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Hide scroll bars if canvas exceeds viewport */
+}
+
+canvas {
+    display: block; /* Ensures no extra space around the canvas */
+}
