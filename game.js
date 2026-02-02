@@ -1,20 +1,13 @@
-// Select the canvas element from the HTML
-const canvas = document.getElementById('myCanvas');
-// Get the 2D rendering context
-const ctx = canvas.getContext('2d');
+import {TableScene} from "./lib/scenes/TableScene.js";
 
-// Set the canvas size to the full window dimensions
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-
-const img = new Image(); // Or document.getElementById('myImage');
-
-// 3. Set the onload event handler BEFORE setting the source
-img.onload = function() {
-    // 4. Use drawImage() to render the image onto the canvas
-    ctx.drawImage(img, 0, 0); // Draws image at coordinates (0, 0)
+var config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    backgroundColor: '#39b84e',
+    scene: TableScene
 };
 
-// 5. Set the image source to start loading the image
-img.src = 'assets/hearts_1.png';
+var game = new Phaser.Game(config);
+
+

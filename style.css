@@ -6,3 +6,18 @@ body {
 canvas {
     display: block; /* Ensures no extra space around the canvas */
 }
+
+#war-canvas {
+    border: solid 1px black;
+
+}
+
+canvas-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+}
+
+.game-title {
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+War card game
+https://en.wikipedia.org/wiki/War_(card_game)
+
+52 cards
+
+Card Ranking:
+
+Joker
+Ace
+King
+Queen
+Jack
+10
+9
+8
+7
+6
+5
+4
+3
+2
+
+So Joker beats everything of lower value and so on
+
+Entities:
+
+Player - 2 players (1 human vs 1 human), (1 human vs CPU), (CPU vs CPU)?
+Deck - contains 54 cards (x2 jokers, 13 cards x 4 suits)
+Card - has a Rank and a Suit
+Suit - hearts (red), diamonds (red), spades (black), clubs (black)
+Turn - one player draws card
+
+Game start:
+
+Randomly determine who goes first. Deck is shuffled and dealt to each player (27 cards per player)
+1. Player 1 draws card
+2. Player 2 draws card
+3. Determine which card is higher
+4. Player with higher card gets opposing players card
+5. If both cards drawn are equal players draw one card face down, and a second card face up and the higher face cards wins
+6. Repeat 1 - 5 until one player runs out of cards
+
